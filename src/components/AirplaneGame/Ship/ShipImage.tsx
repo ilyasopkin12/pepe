@@ -20,7 +20,7 @@ export default function ShipImage({ position, width, height, variant }: ShipProp
       }}
     >
       <img 
-        src="/shipsvg.svg" 
+        src={`${import.meta.env.BASE_URL}shipsvg.svg`}
         alt="Ship" 
         className={styles['ship-image__img']}
         onLoad={() => console.log('✅ Ship SVG loaded from refs!')}

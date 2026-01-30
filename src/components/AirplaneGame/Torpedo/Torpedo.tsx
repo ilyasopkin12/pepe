@@ -17,7 +17,7 @@ export default function Torpedo({ torpedo }: TorpedoProps) {
       }}
     >
       <img 
-        src="/bombs.png" 
+        src={`${import.meta.env.BASE_URL}bombs.png`}
         alt="Torpedo" 
         className={styles['torpedo__image']}
       />

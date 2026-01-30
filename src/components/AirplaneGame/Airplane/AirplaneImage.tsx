@@ -25,7 +25,7 @@ export default function AirplaneImage({ position, phase, rotation = 0, isLanding
     }
   }
 
-  const airplaneImagePath = '/airplane.png'
+  const airplaneImagePath = `${import.meta.env.BASE_URL}airplane.png`
 
   const content = (
     <div className={styles['airplane-img__container']}>

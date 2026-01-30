@@ -34,7 +34,7 @@ export default function Explosion({ id, position, type, onComplete }: ExplosionP
     >
       {type === 'torpedo' && (
         <img 
-          src="/explosion.png" 
+          src={`${import.meta.env.BASE_URL}explosion.png`}
           alt="Explosion" 
           className={styles['explosion__image']}
         />

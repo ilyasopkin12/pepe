@@ -305,7 +305,7 @@ export default function GameCanvas() {
             style={{
               left: `${cloud.x}px`,
               top: `${cloud.y}px`,
-              backgroundImage: `url(/cloud${cloud.type}.png)`,
+              backgroundImage: `url(${import.meta.env.BASE_URL}cloud${cloud.type}.png)`,
             }}
           />
         ))}
