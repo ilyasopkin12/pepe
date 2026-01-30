@@ -1,0 +1,160 @@
+.betting-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  min-width: 280px;
+
+  &__amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__control {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #6B4C9A;
+    background: white;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #6B4C9A;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover:not(:disabled) {
+      background: #6B4C9A;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+
+  &__value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(135deg, #6B4C9A 0%, #9370DB 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(107, 76, 154, 0.3);
+
+    &-number {
+      font-size: 1.75rem;
+      font-weight: bold;
+      color: white;
+      line-height: 1;
+    }
+
+    &-currency {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    &-step {
+      font-size: 0.65rem;
+      color: rgba(255, 255, 255, 0.75);
+      margin-top: 0.125rem;
+    }
+  }
+
+  &__steps {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  &__step {
+    padding: 0.375rem 0.75rem;
+    border: 1.5px solid #E0E0E0;
+    background: white;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover:not(:disabled) {
+      border-color: #6B4C9A;
+      color: #6B4C9A;
+      transform: translateY(-2px);
+    }
+
+    &.active {
+      border-color: #6B4C9A;
+      background: #6B4C9A;
+      color: white;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  &__play {
+    flex: 1;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+
+    &:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(255, 215, 0, 0.5);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+  }
+
+  &__demo {
+    padding: 0.75rem 1rem;
+    border: 2px solid #6B4C9A;
+    background: white;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #6B4C9A;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover:not(:disabled) {
+      background: rgba(107, 76, 154, 0.1);
+    }
+
+    &.active {
+      background: #6B4C9A;
+      color: white;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+}
